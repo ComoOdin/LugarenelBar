@@ -1006,21 +1006,7 @@ public class MainActivity extends AppCompatActivity
 
 
     }
-
-
-    public void mostrarBaresDisponibles() {
-        //DISPONIBLES
-
-
-        if (((int) Math.rint(CalcularDistancias(current_latitud, current_longitud, -31.4272182, -64.1866663) * 1000)) <= valor_rango) {
-            mapa.addMarker(new MarkerOptions()
-                    .position(new LatLng(-31.4272182, -64.1866663))
-                    .title("Blow Club Pub & Restaurant")
-                    .icon(BitmapDescriptorFactory.fromBitmap(getMarkerBitmapFromView(R.drawable.logo_default))));
-        }
-
-
-    }
+    
 
 
     //este metodo es para ocultar las ventanas emergentes de info y radiobutton
