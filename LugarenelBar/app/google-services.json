@@ -1,0 +1,75 @@
+{
+  "project_info": {
+    "project_id": "lugar-en-el-bar",
+    "project_number": "582261806720",
+    "name": "Lugar en el Bar"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582261806720:android:20dff369c4a38dd0",
+        "client_id": "android:com.matic.lugarenelbar",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.matic.lugarenelbar",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582261806720:android:4e2d2f19b4dc2521",
+        "client_id": "android:com.comoodin.lugarenelbar",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.comoodin.lugarenelbar",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/bares_cercanos" android:icon="@android:drawable/ic_menu_mapmode"
+            android:title="Bares Cercanos" />
+        <item android:id="@+id/buscar_bares" android:icon="@android:drawable/ic_menu_search"
+            android:title="Buscar" />
+        <item android:id="@+id/suscribirse" android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Suscribirse" />
+        <item android:id="@+id/nav_manage" android:icon="@android:drawable/ic_menu_manage"
+            android:title="Tools" />
+    </group>
+
+
+    <item android:title="Mis Bares">
+        <menu>
+            <item android:id="@+id/admin" android:icon="@drawable/ic_action_admin"
+                android:title="Soy Dueño" />
+
+        </menu>
+    </item>
+
+
+    <item android:title="Comunicar">
+        <menu>
+            <item android:id="@+id/nav_share" android:icon="@android:drawable/ic_menu_share"
+                android:title="Compartir" />
+            <item android:id="@+id/nav_send" android:icon="@android:drawable/ic_menu_send"
+                android:title="Contacto" />
+        </menu>
+    </item>
+
+
+
+
+</menu>

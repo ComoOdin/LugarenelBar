@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <!--item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" /-->
+    <item android:id="@+id/action_referencia" android:title="@string/action_reference"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+
+    <item android:id="@+id/action_rango"
+        android:icon="@drawable/ic_action_radio"
+        android:title="@string/btn_rango"
+        app:showAsAction="always"
+       />
+
+    <item android:id="@+id/action_filtro"
+    android:icon="@drawable/ic_action_filter_outline"
+    android:title="@string/btn_filtro"
+    app:showAsAction="always"
+    />
+
+</menu>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.matic.lugarenelbar.com.matic.lugarenelbar.utils.MapWrapperLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/horizontal_mapa"
+    android:id="@+id/map_container"
+    android:paddingRight="@dimen/horizontal_mapa"
+    android:paddingTop="@dimen/vertical_mapa"
+    android:paddingBottom="@dimen/vertical_mapa"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    tools:context=".MainActivity">
+
+
+    <fragment
+        android:id="@+id/mapa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView android:text="latitud" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbl_latitud"
+            android:visibility="invisible"/>
+
+        <TextView android:text="longitud" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbl_longitud"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Buscando Bares Cercanos"
+            android:id="@+id/lbl_pb_baresCercanos"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:textColor="#353535"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Por favor espere..."
+            android:id="@+id/lbl_pb_message"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textColor="#6a6a6a"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_radiobutton"
+            android:orientation="vertical"
+            android:layout_width="170dp"
+            android:layout_height="110dp"
+            android:layout_gravity="top|right"
+            android:background="@drawable/layout_radiobutton"
+            android:layout_marginTop="-200dp"
+            android:layout_marginRight="30dp"
+            android:visibility="invisible"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Bares a:"
+                android:id="@+id/textView4"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="visible"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rb_menosde"
+                    android:id="@+id/rb_menora1000"
+                    android:onClick="eventoRadiobuttons" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rb_masde"
+                    android:id="@+id/rb_mayora1000"
+                    android:onClick="eventoRadiobuttons" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_view_info"
+            android:orientation="vertical"
+            android:layout_width="280dp"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:alpha="1"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/layout_radiobutton"
+            android:layout_marginTop="-110dp"
+            android:visibility="invisible">
+
+            <!--  android:background="@drawable/layout_info_bg" -->
+            <!--android:background="@android:drawable/picture_frame" -->
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/marker_mask_disp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:elevation="1dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Bares disponibles"
+                android:id="@+id/textView2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-35dp"
+                android:elevation="0dp"
+                android:textColor="#343533" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/marker_mask_nodisp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:elevation="1dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Bares no disponibles"
+                android:id="@+id/textView3"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-35dp"
+                android:enabled="false"
+                android:focusable="false"
+                android:singleLine="false"
+                android:textColor="#343533" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.matic.lugarenelbar.com.matic.lugarenelbar.utils.MapWrapperLayout>

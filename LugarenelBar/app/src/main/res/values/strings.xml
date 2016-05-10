@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Lugar en el Bar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_reference">Referencias</string>
+    <string name="title_activity_listado_bares">Listado Bares</string>
+
+    <string name="title_activity_splash">Lugar en el Bar</string>
+    <string name="btn_rango">Rango para ver bares cercanos</string>
+    <string name="rb_menosde">Menos de 1000 mts</string>
+    <string name="rb_masde">Menos de 5000 mts</string>
+    <string name="btn_filtro">Filtrar por disponibilidad</string>
+
+
+    <string name="TITULO_PROGRESS_DIALOG">Obteniendo ubicación</string>
+    <string name="MENSAJE_PROGRESS_DIALOG">Espere por favor...</string>
+    <string name="MENSAJE_DIALOG_GPS">Su GPS se encuentra desactivado. Sin él su ubicación será poco precisa. \n¿Desea activar su ubicación por GPS?</string>
+    <string name="TITULO_DIALOG_GPS">Atención</string>
+
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">Este campo es requerido</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+    <string name="title_activity_nuevobar">Nuevo bar</string>
+
+    <!-- Strings related to nuevobar -->
+    <string name="prompt_nombre_legal_bar">Nombre Legal</string>
+    <string name="prompt_nombre_fantasia_bar">Nombre Fantasia</string>
+    <string name="prompt_ciudad">Ciudad</string>
+    <string name="prompt_pais">Pais</string>
+    <string name="prompt_calle">Calle</string>
+    <string name="prompt_numeroCalle">Número</string>
+    <string name="prompt_tel">Teléfono</string>
+    <string name="prompt_usarMiUbicacion">Usar mi ubicación</string>
+    <string name="prompt_logo">Logo (Opcional)</string>
+
+
+    <string name="prompt_pickGaleria">Subir logo</string>
+    <string name="prompt_camara">Cámara</string>
+
+
+
+    <!-- Strings Alert dialog -->
+    <string name="pd_titulo">Obteniendo ubicación</string>
+    <string name="pd_message">Espere por favor...</string>
+    <string name="dialog_gps_titulo">GPS Desactivado</string>
+    <string name="dialog_gps_message">Su GPS se encuentra desactivado. Sin él su ubicación será poco precisa. \n¿Desea activar su ubicación por GPS?</string>
+
+    <string name="gpsActivado">GPS ACTIVADO</string>
+    <string name="gpsDesactivado">GPS DESACTIVADO</string>
+
+
+    <string name="pd_si">Si</string>
+    <string name="pd_no">No</string>
+
+
+    <string name="str_allBares">TODOS LOS BARES</string>
+    <string name="str_availableBares">SOLO BARES DISPONIBLES</string>
+
+    <string name="str_marker_currentLocation">UBICACIÓN ACTUAL</string>
+
+
+    <string name="titulo_saveSuccessful">Felicitaciones!</string>
+    <string name="message_saveSuccessful">Su bar ha sido guardado con éxito.</string>
+    <string name="titulo_saveFailed">Ocurrió un error</string>
+    <string name="message_saveFailed">Lo sentimos, no se pudo guardar su bar. Al parecer, ya existe un bar con el mismo nombre legal.</string>
+
+
+
+    <string name="pd_titulo_saveSuccessful">Guardando</string>
+    <string name="pd_message_saveSuccessful">Guardando...</string>
+
+
+
+
+
+
+
+
+
+</resources>
